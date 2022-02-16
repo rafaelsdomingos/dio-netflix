@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+:root{
+    --cor-fundo: #141414;
+    --cor-header: #060606;
+    --cor-logo: #E50914;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO */
+
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-header);
+    color: #FFFFFF;
+}
+
+header h1{
+    color: var(--cor-logo);
+    font-weight: 900;
+}
+
+header nav a{
+    color: white;
+    margin-right: 20px;
+}
+
+/* CONFIGURAÇÃO DA SEÇÃO DO BANER */
+
+.movie-banner{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100% ), url("../images/capas/star-wars-ep4.jpg");
+    background-size: cover;
+    
+    
+}
+
+.movie-banner p{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.buttons{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.buttons button{
+    padding: 15px 40px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    border: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover{
+
+    background-color: rgba(255,255, 255, 0.637);
+    border: none;
+    color: #000000;
+}
+
