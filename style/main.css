@@ -33,25 +33,42 @@ header{
 header h1{
     color: var(--cor-logo);
     font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 header nav a{
     color: white;
     margin-right: 20px;
+    transition: ease-in-out .2s;
+}
+
+
+header nav a:hover{
+    color: #cecbcb;
 }
 
 /* CONFIGURAÇÃO DA SEÇÃO DO BANER */
 
 .movie-banner{
-    min-height: 400px;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100% ), url("../images/capas/star-wars-ep4.jpg");
     background-size: cover;
-    
-    
+}
+
+.movie-title{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.movie-info{
+    margin-top: 20px;
+
+
 }
 
 .movie-banner p{
@@ -61,7 +78,7 @@ header nav a{
 
 .buttons{
     width: 40%;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .buttons button{
@@ -83,3 +100,17 @@ header nav a{
     color: #000000;
 }
 
+.movie-carousel{
+    margin-top: 20px;
+}
+
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.movie-box:hover{
+    
+}

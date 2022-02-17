@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!--Links CSS do Owl-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>DIO | Recriando Interface do Netflix</title>
 </head>
 <body>
     <header>
-        <h1>CLONEFLIX</h1>
+        <h1>ClassicFlix</h1>
         <nav class="main-menu">
             <a href="">Início</a>
             <a href="">Filmes</a>
@@ -20,8 +25,8 @@
 
     <main>
         <section class="movie-banner">
-            <h3>Filme</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto blanditiis ratione debitis facilis sunt quibusdam voluptatum aliquid, dignissimos saepe ut! Impedit, dicta earum et iste vero neque incidunt natus nobis!</p>
+            <h3 class="movie-title">Star Wars: Uma Nova Esperança</h3>
+            <p class="movie-info">A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e o capitão Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia.</p>
             <div class="buttons">
                 <button>
                     <i class="fa-solid fa-play"></i>
@@ -29,14 +34,32 @@
                 </button>
                 <button>
                     <i class="fa-solid fa-circle-info"></i>
-                    Detalhes
+                    Mais informações
                 </button>
             </div>
         </section>
 
     </main>
 
+    <div class="movie-carousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item movie-box"><img src="images/capas/film1.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film2.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film3.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film4.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film5.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film6.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film7.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film8.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film9.jpg" alt=""></div>
+            <div class="item movie-box"><img src="images/capas/film10.jpg" alt=""></div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/577bf33f54.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 
     
 </body>
